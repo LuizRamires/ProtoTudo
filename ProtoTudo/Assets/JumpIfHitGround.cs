@@ -11,7 +11,6 @@ public class JumpIfHitGround : MonoBehaviour
     {
         if (collision.gameObject.name == "Chão")
         {
-            Debug.Log(name);
             rb.AddForce(transform.up * jumpForce * 50);
         }
 

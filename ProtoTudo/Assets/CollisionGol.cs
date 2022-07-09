@@ -15,9 +15,9 @@ public class CollisionGol : MonoBehaviour
         {
             //If the GameObject has the same tag as specified, output this message in the console
             Debug.Log("Gol do vampeta");
-            mainCamera.SetActive(false);
             ballCamera.SetActive(true);
             teamMates.SetActive(true);
+            mainCamera.SetActive(false);
             audioSource.Play();
         }
     }
