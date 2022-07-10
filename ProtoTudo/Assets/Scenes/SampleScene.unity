@@ -2859,6 +2859,7 @@ GameObject:
   - component: {fileID: 749267858}
   - component: {fileID: 749267857}
   - component: {fileID: 749267856}
+  - component: {fileID: 749267860}
   m_Layer: 0
   m_Name: InteractiveWall
   m_TagString: InteractiveWall
@@ -2893,7 +2894,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 738798648}
 --- !u!33 &749267857
@@ -3014,6 +3015,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &749267860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749267854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: -1.12}
+  m_Center: {x: 0.5, y: 0.5, z: -0.86}
 --- !u!43 &808759676
 Mesh:
   m_ObjectHideFlags: 0
@@ -5925,6 +5939,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6124404872861021234, guid: c23af66ab16a2094fbdab1f2f6717f24, type: 3}
+      propertyPath: m_Depth
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6124404873848126848, guid: c23af66ab16a2094fbdab1f2f6717f24, type: 3}
       propertyPath: m_Name
       value: FPSplayer
@@ -41825,22 +41843,6 @@ MonoBehaviour:
   lookXLimit: 45
   pushPower: 10
   canMove: 1
---- !u!54 &1939840706
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939840702}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1939840709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41899,7 +41901,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -2
+  m_Depth: -10
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
